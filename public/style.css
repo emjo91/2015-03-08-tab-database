@@ -1,0 +1,159 @@
+/* 
+Fossil Vintage: https://color.adobe.com/Fossil-Vintage-color-theme-1289526/
+Colour choices
+body: #745A33
+content: #FCF5BF
+text: #5EB299
+header: #5EB299
+nav: #CFCA4C
+EXTRA: #9FE5C2
+*/
+
+/* GENERAL RESET */
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background: #745A33;
+}
+
+/* JAVASCRIPT CLASSES */
+
+.hidden {
+  display: none;
+  padding: 5% 0;
+  margin: 0  5%;
+  width: 40%;
+  float: left;
+}
+
+.active {
+  display: inline-block;
+  padding: 5% 0;
+  margin: 0  5%;
+  width: 40%;
+  float: left;
+}
+
+.hidden-result {
+  display: none;
+  padding: 5% 0;
+  margin: 0  5%;
+  width: 40%;
+  float: right;
+}
+
+.active-result {
+  display: inline-block;
+  padding: 5% 0;
+  margin: 0  5%;
+  width: 40%;
+  float: right;
+}
+
+/* IDS */
+
+#view {
+  
+}
+
+#create {
+  
+}
+
+#edit {
+  
+}
+
+#terminate {
+  
+}
+
+/* CLASSES */
+
+.content {
+  background: #FCF5BF;
+  width: 70%;
+  margin: 0 15% 60px 15%;
+  height: 500px;
+  box-shadow: 8px 6px 10px #4c3b22;
+}
+
+.content-restrain {
+  padding: 5% 0;
+  margin: 0  5%;
+  width: 40%;
+  float: left;
+  display: none;
+}
+
+.result-restrain {
+  padding: 5% 0;
+  margin: 0  5%;
+  width: 40%;
+  float: right;
+  display: none;
+}
+
+/* NAV */
+
+nav {
+  width: 70%;
+  margin: 60px 15% 0 15%;
+/*  position: relative;
+  top: 1;
+  z-index: -1;*/
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  background: #CFCA4C;
+  display: inline-block;
+  width: 20%;
+  height: 40px;
+  text-align: center;
+/*  box-shadow: 8px -6px 10px #4c3b22;*/
+}
+
+nav ul li a {
+  text-decoration: none;
+  line-height: 40px;
+  color: #745A33;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* TEXT RESET */
+h1 {
+  color: #5EB299;
+  font-size: 250%;
+  font-family: serif;
+  margin: 0 0 15px 0;
+}
+
+h3 {
+  color: #89725B;
+  font-family: sans-serif;
+}
+
+p {
+  color: #5EB299;
+  font-family: sans-serif;
+}
+
+/* FORM ELEMENTS */
+
+input {
+  margin: 10px 0
+}
