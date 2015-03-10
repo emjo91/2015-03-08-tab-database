@@ -71,33 +71,38 @@ window.onload = function(){
     results.className = "hidden";
   });
     
+    
   // Adding results to the View Page //
+  // Not consistently working //
   viewR.addEventListener("click", function(){
+    var id = document.getElementById("view-value").value;
     var request = new XMLHttpRequest;
-    // var id =
     request.open("get", "http://localhost:4567/view/" + id);
     request.send();
-    // request.addEventListener("load" function(){
-    //   var object = JSON.parse(request.response);
-    //   results.className = "active-result";
-    //   document.getElementById("results").innerHTML = "<h3>" + object.general_info + "</h3>" +
-    //   "<p>" + object.technical_specs + object.where_to_buy + "</p>";
-    // });
-  });
+    request.addEventListener("load", function(){
+      var object = JSON.parse(request.response);
+      results.className = "active-result";
+      document.getElementById("results").innerHTML = "<h3>" + object.general_info + "</h3>" +
+      "<p>" + object.technical_specs + "</p>" + "<p>" + object.where_to_buy + "</p>";
+    });
+  }); //end viewR.addEventListener
+  
   
   // Adding results to the Create Page //
   createR.addEventListener("click", function(){
     results.className = "active-result";
   });
   
+  
   // Adding results to the Edit Page //
   editR.addEventListener("click", function(){
     results.className = "active-result";
   });
   
+  
   // Adding results to the Terminate Page //
   // No longer staying on the same page anymore...WHY!? :( // 
-  // THIS IS WORKING DO NOT TOUCH //
+  // THIS IS WORKING DO NOT TOUCH -- works sometimes //
   terminateR.addEventListener("click", function(){
     var id = document.getElementById("fluff").value;
     var request = new XMLHttpRequest;
