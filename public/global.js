@@ -70,26 +70,43 @@ window.onload = function(){
     create.className = "hidden";
     results.className = "hidden";
   });
-  
+    
   // Adding results to the View Page //
   viewR.addEventListener("click", function(){
-    results.className = "active-result";
-  })
+    var request = new XMLHttpRequest;
+    // var id =
+    request.open("get", "http://localhost:4567/view/" + id);
+    request.send();
+    // request.addEventListener("load" function(){
+    //   var object = JSON.parse(request.response);
+    //   results.className = "active-result";
+    //   document.getElementById("results").innerHTML = "<h3>" + object.general_info + "</h3>" +
+    //   "<p>" + object.technical_specs + object.where_to_buy + "</p>";
+    // });
+  });
   
   // Adding results to the Create Page //
   createR.addEventListener("click", function(){
     results.className = "active-result";
-  })
+  });
   
   // Adding results to the Edit Page //
   editR.addEventListener("click", function(){
     results.className = "active-result";
-  })
+  });
   
   // Adding results to the Terminate Page //
+  // Need to SEND JSON here. May need to add a load eventListener for result // 
+  // Do I need to somehow add an id verifier?? //
   terminateR.addEventListener("click", function(){
-    results.className = "active-result";
-  })
+    var request = new XMLHttpRequest;
+    request.open("get", "http://localhost:4567/delete/" + id); //id is not defined...is the problem
+    request.send();
+    request.addEventListener("load", function(){
+      results.className = "active-result"; //addEventListener??
+    });
+    
+  });
   
   
   
