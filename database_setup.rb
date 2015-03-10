@@ -14,9 +14,9 @@ DATABASE.execute("CREATE TABLE IF NOT EXISTS products(id INTEGER PRIMARY KEY, ge
 # It's not important for this project whether you use a database adapter module from a past project or write your model methods from scratch. Just do what's easiest.
 # Do build views and forms for the various actions. This is not an API project. It's a standard Sinatra resource application.
 
-product1 = Product.new({"general_info"=>"Meow", "technical_specs"=>"Mrow", "where_to_buy"=>"Kitty"})
-product2 = Product.new({"general_info"=>"Woof", "technical_specs"=>"Ruff", "where_to_buy"=>"Doggy"})
-product3 = Product.new({"general_info"=>"Chirp", "technical_specs"=>"Tweet", "where_to_buy"=>"Birdie"})
+# p1 = Product.new({"general_info"=>"Meow", "technical_specs"=>"Mrow", "where_to_buy"=>"Kitty"})
+# p2 = Product.new({"general_info"=>"Woof", "technical_specs"=>"Ruff", "where_to_buy"=>"Doggy"})
+# p3 = Product.new({"general_info"=>"Chirp", "technical_specs"=>"Tweet", "where_to_buy"=>"Birdie"})
 
 
                 

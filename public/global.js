@@ -96,17 +96,17 @@ window.onload = function(){
   });
   
   // Adding results to the Terminate Page //
-  // Need to SEND JSON here. May need to add a load eventListener for result // 
-  // Do I need to somehow add an id verifier?? //
+  // No longer staying on the same page anymore...WHY!? :( // 
+  // THIS IS WORKING DO NOT TOUCH //
   terminateR.addEventListener("click", function(){
+    var id = document.getElementById("fluff").value;
     var request = new XMLHttpRequest;
-    request.open("get", "http://localhost:4567/delete/" + id); //id is not defined...is the problem
+    request.open("get", "http://localhost:4567/delete/" + id); 
     request.send();
     request.addEventListener("load", function(){
-      results.className = "active-result"; //addEventListener??
-    });
-    
-  });
+      results.className = "active-result";
+    }); //end request.addEventListener
+  }); //end terminateR.addEventListener
   
   
   
