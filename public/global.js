@@ -102,7 +102,7 @@ window.onload = function(){
     var createWhere = document.getElementById("create-where-value").value;
     
     var request = new XMLHttpRequest;
-    request.open("get", "http://localhost:4567/create/");
+    request.open("get", "http://localhost:4567/create");
     request.send();
     results.className = "active-result";
   });
